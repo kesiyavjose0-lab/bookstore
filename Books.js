@@ -1,0 +1,322 @@
+import img1 from "../assets/img1.jpeg";
+import img2 from "../assets/img2.jpeg";
+import img3 from "../assets/img3.jpeg";
+import img4 from "../assets/img4.jpeg";
+import img5 from "../assets/img5.jpeg";
+import img6 from "../assets/img6.jpeg";
+import img7 from "../assets/img7.jpeg";
+import img8 from "../assets/img8.jpeg";
+import img9 from "../assets/img9.jpeg";
+import img10 from "../assets/img10.jpeg";
+import img11 from "../assets/img11.jpeg";
+import img12 from "../assets/img12.jpeg";
+import img13 from "../assets/img13.jpeg";
+import img14 from "../assets/img14.jpeg";
+import img15 from "../assets/img15.jpeg";
+import img16 from "../assets/img16.jpeg";
+import img17 from "../assets/img17.jpeg";
+import img18 from "../assets/img18.jpeg";
+import img19 from "../assets/img19.jpeg";
+import img20 from "../assets/img20.jpeg";
+const books = [
+  {
+    id: 1,
+    title: "The Silent Forest",
+    author: "Arun Kumar",
+    status: "Available",
+    genre: "Adventure",
+    year: 2018,
+    rating: 4.3,
+    price: 299,
+    pages: 320,
+    language: "English",
+    isbn: "9781234560011",
+    image:img1,
+     description: "A thrilling journey into a mysterious forest where secrets unfold."
+  },
+  {
+    id: 2,
+    title: "Wings of Fire",
+    author: "APJ Abdul Kalam",
+    status: "Rented",
+    genre: "Autobiography",
+    year: 1999,
+    rating: 4.8,
+    price: 199,
+    pages: 180,
+    language: "English",
+    isbn: "9788173711466",
+    image: img2,
+    description: "An inspiring autobiography of Dr. APJ Abdul Kalam, the Missile Man of India."
+  },
+  {
+    id: 3,
+    title: "The Great Escape",
+    author: "John Carter",
+    status: "Available",
+    genre: "Thriller",
+    year: 2020,
+    rating: 4.1,
+    price: 350,
+    pages: 290,
+    language: "English",
+    isbn: "9781234560033",
+    image:img3,
+    description: "A gripping thriller about courage, strategy, and survival."
+  },
+  {
+    id: 4,
+    title: "Mystic River",
+    author: "Dennis Lehane",
+    status: "Rented",
+    genre: "Mystery",
+    year: 2001,
+    rating: 4.2,
+    price: 399,
+    pages: 405,
+    language: "English",
+    isbn: "9780061374787",
+    image: img4,
+    description: "A haunting mystery woven around crime, friendship, and fate."
+  },
+  {
+    id: 5,
+    title: "War Heroes",
+    author: "Ravi Nair",
+    status: "Available",
+    genre: "History",
+    year: 2015,
+    rating: 4.5,
+    price: 280,
+    pages: 340,
+    language: "English",
+    isbn: "9781234560055",
+    image: img5,
+    description: "Real-life stories of brave soldiers who shaped history."
+  },
+  {
+    id: 6,
+    title: "Ocean Blue",
+    author: "Meera Chandran",
+    status: "Available",
+    genre: "Romance",
+    year: 2017,
+    rating: 4.0,
+    price: 260,
+    pages: 230,
+    language: "English",
+    isbn: "9781234560066",
+    image: img6,
+    description: "A heartwarming romance set against the beauty of the ocean."
+  },
+  {
+    id: 7,
+    title: "Future World",
+    author: "Alex Ray",
+    status: "Rented",
+    genre: "Science Fiction",
+    year: 2022,
+    rating: 4.7,
+    price: 450,
+    pages: 360,
+    language: "English",
+    isbn: "9781234560077",
+    image:img7,
+    description: "A futuristic tale exploring technology, society, and human evolution."
+  },
+  {
+    id: 8,
+    title: "The Last Kingdom",
+    author: "Bernard",
+    status: "Available",
+    genre: "Historical Fiction",
+    year: 2010,
+    rating: 4.6,
+    price: 399,
+    pages: 520,
+    language: "English",
+    isbn: "9780061978879",
+    image: img8,
+    description: "A powerful story of ancient kingdoms, war, and heroism."
+  },
+  {
+    id: 9,
+    title: "Hidden Truth",
+    author: "Sara Thomas",
+    status: "Available",
+    genre: "Suspense",
+    year: 2019,
+    rating: 4.1,
+    price: 330,
+    pages: 300,
+    language: "English",
+    isbn: "9781234560099",
+    image: img9,
+    description: "A suspenseful tale uncovering dark secrets and unexpected twists."
+  },
+  {
+    id: 10,
+    title: "Broken Wings",
+    author: "Lucy White",
+    status: "Rented",
+    genre: "Drama",
+    year: 2014,
+    rating: 3.9,
+    price: 270,
+    pages: 250,
+    language: "English",
+    isbn: "9781234560100",
+    image:img10,
+    description: "A dramatic story of struggle, loss, and inner strength."
+  },
+  {
+    id: 11,
+    title: "The Sky Above",
+    author: "Kiran Reddy",
+    status: "Available",
+    genre: "Inspirational",
+    year: 2021,
+    rating: 4.4,
+    price: 280,
+    pages: 200,
+    language: "English",
+    isbn: "9781234560111",
+    image: img11,
+    description: "An uplifting story about hope, dreams, and finding purpose."
+  },
+  {
+    id: 12,
+    title: "Digital Dreams",
+    author: "Alan Smith",
+    status: "Available",
+    genre: "Technology",
+    year: 2023,
+    rating: 4.8,
+    price: 499,
+    pages: 310,
+    language: "English",
+    isbn: "9781234560122",
+    image: img12,
+    description: "Exploring how AI and digital innovation shape our future."
+  },
+  {
+    id: 13,
+    title: "The Path of Light",
+    author: "Vivekananda",
+    status: "Rented",
+    genre: "Spiritual",
+    year: 1955,
+    rating: 4.9,
+    price: 150,
+    pages: 190,
+    language: "English",
+    isbn: "9781234560133",
+    image: img13,
+    description: "Teachings and wisdom for a meaningful and enlightened life."
+  },
+  {
+    id: 14,
+    title: "The Lost Treasure",
+    author: "Kevin Hart",
+    status: "Available",
+    genre: "Adventure",
+    year: 2016,
+    rating: 4.2,
+    price: 340,
+    pages: 370,
+    language: "English",
+    isbn: "9781234560144",
+    image: img14,
+    description: "An action-packed treasure hunt filled with mystery and danger."
+  },
+  {
+    id: 15,
+    title: "Beyond Stars",
+    author: "Nina Brown",
+    status: "Available",
+    genre: "Science Fiction",
+    year: 2020,
+    rating: 4.5,
+    price: 380,
+    pages: 410,
+    language: "English",
+    isbn: "9781234560155",
+    image: img15,
+    description: "A captivating sci-fi journey through galaxies and beyond."
+  },
+  {
+    id: 16,
+    title: "Human Mind",
+    author: "Dr Maya",
+    status: "Rented",
+    genre: "Psychology",
+    year: 2013,
+    rating: 4.6,
+    price: 299,
+    pages: 280,
+    language: "English",
+    isbn: "9781234560166",
+    image: img16,
+    description: "A deep exploration of human thoughts, emotions, and behavior."
+  },
+  {
+    id: 17,
+    title: "Desert Storm",
+    author: "Rohit Das",
+    status: "Available",
+    genre: "Action",
+    year: 2018,
+    rating: 4.0,
+    price: 310,
+    pages: 330,
+    language: "English",
+    isbn: "9781234560177",
+    image: img17,
+    description: "A high-stakes action thriller set in the scorching desert."
+  },
+  {
+    id: 18,
+    title: "Frozen Time",
+    author: "Laura Green",
+    status: "Rented",
+    genre: "Fantasy",
+    year: 2021,
+    rating: 4.3,
+    price: 399,
+    pages: 450,
+    language: "English",
+    isbn: "9781234560188",
+    image: img18,
+    description: "A magical world where time itself is the ultimate enemy."
+  },
+  {
+    id: 19,
+    title: "Whispering Shadows",
+    author: "Damien",
+    status: "Available",
+    genre: "Horror", 
+    year: 2021,
+    rating: 4.3,
+    price: 399,
+    pages: 450,
+    language: "English",
+    isbn: "9781234560188",
+    image: img19,
+    description: "A magical world where time itself is the ultimate enemy."},
+    {
+      id: 20,
+      title: "Harry Potter",
+      author: "J K Rowling",
+      status: "Available",
+      genre: "Fantasy", 
+      year: 2000,
+      rating: 4.3,
+      price: 399,
+      pages: 450,
+      language: "English",
+      isbn: "9781234560188",
+      image: img20,
+      description: "A magical world for mages."}
+  ];
+
+  export default books;
